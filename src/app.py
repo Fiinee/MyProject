@@ -77,9 +77,9 @@ def leaders():
 def rules():
     return render_template('rules.html')
 
-@app.route('/base')
+@app.route('/index')
 def base():
-    return render_template('base.html')
+    return render_template('indes.html')
 
 
 @app.route('/logout')
