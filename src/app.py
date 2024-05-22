@@ -79,7 +79,7 @@ def rules():
 
 @app.route('/index')
 def base():
-    return render_template('indes.html')
+    return render_template('index.html')
 
 
 @app.route('/logout')
