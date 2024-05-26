@@ -10,10 +10,20 @@
     <div class="error-container"> 
         <lottie-player src="{{ url_for('static', filename='er404.json') }}"
         background="transparent" speed="1" 
-        style="width: 100px; height: 100px; margin: auto;"
+        style="width: 400px; height: 400px; margin: auto;"
         loop autoplay> 
     </lottie-player>
-    <p> </p>
+    <a  href="/index">Главная</a>
     </div>
 </body>
+<style>
+    a{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    width: 40%;
+    height: 40%;
+    text-decoration: none;
+  }
+</style>
 </html>
