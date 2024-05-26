@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>405</title>
+</head>
+<body>
+    <div>
+        <h1> 405 Method Not Allowed </h1>
+    </div>
+    <div id="loader">
+        <div id="ball"></div>
+      </div>
+<style>
+h1{
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  width: 40%;
+  height: 40%;
+  color: black;
+}
+
+
+#loader {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 40%;
+  height: 40%;
+}
+#ball {
+  position: absolute;
+  left: 0;
+  bottom: -.1em;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: .25em solid black;
+  border-radius: 50px;
+  transform: translate(0, 0px);
+  animation: push 2.5s infinite;
+}
+
+@keyframes push {
+  0% {
+    transform: translate(100px, 0);
+     }
+  25% {
+    transform: translate(0px, -50px);
+     }
+  50% {
+    transform: translate(-100px, 0px);
+     }
+ 
+  100%{
+    transform: translate(100px,0)
+  }
+}
+</style>
+</body>
+</html>

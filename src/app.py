@@ -87,6 +87,23 @@ def logout():
     logout_user()
     return redirect(url_for('login'))
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
+@app.errorhandler(400)
+def page_badreq(e):
+    return render_template('400.html'), 400
+
+@app.errorhandler(405)
+def page_notall(e):
+    return render_template('405.html'), 405
+
+@app.errorhandler(402)
+def page_402(e):
+    return render_template('402.html'), 402
+
+
 
 
 if __name__ == '__main__':
