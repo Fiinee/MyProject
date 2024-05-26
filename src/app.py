@@ -99,9 +99,9 @@ def page_badreq(e):
 def page_notall(e):
     return render_template('405.html'), 405
 
-@app.errorhandler(402)
-def page_402(e):
-    return render_template('402.html'), 402
+# @app.errorhandler(402)
+# def page_402(e):
+  #  return render_template('402.html'), 402
 
 
 
