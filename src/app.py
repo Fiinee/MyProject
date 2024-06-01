@@ -99,9 +99,9 @@ def page_badreq(e):
 def page_notall(e):
     return render_template('405.html'), 405
 
-@app.errorhandler(402)
+@app.route('/402')
 def page_402(e):
-  return render_template('402.html'), 402
+  return render_template('402.html') #почему на 402 ругается хостинг как записать по другому то 
 
 @app.errorhandler(401)
 def page_401(e):
