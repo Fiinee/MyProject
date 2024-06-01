@@ -103,8 +103,13 @@ def page_notall(e):
 # def page_402(e):
   #  return render_template('402.html'), 402
 
+@app.errorhandler(500)
+def page_notall(e):
+    return render_template('500.html'), 500
 
-
+@app.errorhandler(502)
+def page_notall(e):
+    return render_template('502.html'), 502
 
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0", port="8080")
