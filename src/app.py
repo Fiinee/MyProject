@@ -99,17 +99,33 @@ def page_badreq(e):
 def page_notall(e):
     return render_template('405.html'), 405
 
-# @app.errorhandler(402)
-# def page_402(e):
-  #  return render_template('402.html'), 402
+@app.errorhandler(402)
+def page_402(e):
+  return render_template('402.html'), 402
+
+@app.errorhandler(401)
+def page_401(e):
+    return render_template('401.html'), 401
+
+@app.errorhandler(403)
+def page_403(e):
+  return render_template('402.html'), 403
 
 @app.errorhandler(500)
-def page_notall(e):
+def page_no500(e):
     return render_template('500.html'), 500
 
 @app.errorhandler(502)
-def page_notall(e):
+def page_502(e):
     return render_template('502.html'), 502
+
+@app.errorhandler(501)
+def page_501(e):
+    return render_template('501.html'), 501
+
+@app.errorhandler(503)
+def page_503(e):
+    return render_template('503.html'), 503
 
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0", port="8080")
