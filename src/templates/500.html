@@ -40,14 +40,32 @@
         style="width: 400px; height: 400px; margin: auto; top: 20%;"
         loop autoplay> 
     </lottie-player>
+    <div class="loader"></div>
     <style>
         h1{
             position: absolute;
             top: 10%;
-            left: 40%;
+            left: 35%;
             width: 40%;
             height: 40%;
           }
+          .loader{
+  width:200px;
+  height: 20px;
+  margin-left: 40%;
+  
+  background: #fefff8;
+  border-right:190px solid #FFD700;
+  border-left:0px solid #FFD700;
+  box-shadow: 0 0 0 1px #fefff8;
+  animation:barloader2 infinite 1.5s linear;
+}
+@keyframes barloader2{
+  50%{
+  border-right:0px solid #FFD700;
+  border-left:190px solid #FFD700;
+  }
+}
          </style>
     </div>
 </body>

@@ -40,6 +40,13 @@
         style="width: 400px; height: 400px; margin: auto; top: 20%;"
         loop autoplay> 
     </lottie-player>
+    <div id="background-wrap">
+        <div class="x1">
+            <div class="cloud"></div>
+        </div>
+       
+</div>
+    </div>
     <style>
         h1{
             position: absolute;
@@ -48,6 +55,39 @@
             width: 40%;
             height: 40%;
           }
+          
+#background-wrap {
+    bottom: 0;
+  left: 0;
+  margin-top: 20%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+@keyframes animateCloud {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+
+.x1 {
+
+  animation: animateCloud 15s linear infinite;
+  transform: scale(0.5);
+}
+.cloud {
+  background: #C0C0C0;
+  border-radius: 100px;
+  height: 120px;
+  position: relative;
+  width: 350px;
+}
          </style>
     </div>
 </body>
